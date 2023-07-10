@@ -1,0 +1,262 @@
+
+nav {
+  background: rgb(189, 195, 160);
+     height: 80px;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   .logo {
+     height: 50px;
+   
+     margin: auto 0 auto 3.7rem;
+   }
+   
+   nav ul {
+     float: right;
+     margin-right: 3rem;
+   }
+   
+   nav ul li {
+     display: inline-block;
+     line-height: 80px;
+     margin-left: 5px;
+   }
+   
+   nav ul li a {
+     color:black;
+     font-size: 17px;
+     padding: 7px 13px;
+     border-radius: 4px;
+     text-transform: uppercase;
+   }
+   
+   nav ul li a.active1,
+   nav ul li a:hover {
+     background-color: rgb(213, 208, 140);
+   }
+   
+   .checkbtn {
+     
+     font-size: 30px;
+     color: rgb(255, 0, 0);
+     float: right;
+     line-height: 80px;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+   
+   }
+  
+   #check {
+     display: none;
+   }
+   
+   @media (max-width: 952px) {
+     .logo {
+       height: 40px;
+       margin: auto 0 auto 1.5rem;
+     }
+   
+     nav ul li a {
+       font-size: 15px;
+     }
+     nav ul {
+       margin-right: 1rem;
+     }
+   }
+   
+   @media (max-width: 858px) {
+     nav {
+     
+       flex-direction: row-reverse;
+     }
+     .checkbtn {
+       display: block;
+     }
+   
+     nav ul {
+       position: fixed;
+       width: 100%;
+       height: auto;
+       background: rgb(174, 181, 140);
+       top: 80px;
+       left: 0;
+       text-align: center;
+       transition: all 0.5s ease;
+       border-radius: 0px 0px 30px 30px;
+       /* clip-path: circle(0% at 92% 0); */
+       clip-path: inset(0 0 100% 0);
+       visibility: hidden;
+       z-index: 1000;
+     }
+     nav ul li {
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+     }
+     nav ul li a {
+       font-size: 20px;
+     }
+     nav ul li a:hover,
+     nav ul li a.active1 {
+       background: none;
+       color: rgb(246, 7, 7);
+       z-index: 4;
+     }
+     #check:checked ~ ul {
+       clip-path: inset(0 0 0% 0);
+       /* clip-path: circle(130% at 50% 0); */
+       visibility: visible;
+     }
+   }
+ 
+ 
+ 
+ 
+ /**********************************************footer*********************************************/
+ 
+  
+    
+   footer {
+    /*margin-top: 100px;*/
+    position: relative;
+    width: 100%;
+   
+    background: #3884fc;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  
+  footer .social_icons,
+  footer .menu {
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    z-index: 100;
+  }
+  
+  footer .social_icons li a {
+    font-size: 2em;
+    color: #f9f9fa;
+    margin: 0 10px;
+    transition: .5s;
+    display: inline-block;
+  }
+  
+  footer .social_icons li a:hover {
+    transform: translateY(-10px);
+  }
+  
+  footer .menu li a {
+    font-size: 1.2em;
+    color: #eaecf3;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: .75;
+  }
+  
+  footer .menu li a:hover {
+    opacity: 1;
+
+  }
+  
+  footer p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
+  }
+  
+  footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: url(./../image/wave.png);
+    background-size: 1000px 100px;
+  }
+  
+  footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 10s linear infinite;
+  }
+  
+  footer .wave#wave2 {
+    z-index: 999;
+    opacity: .5;
+    bottom: 10px;
+    animation: animateWave_02 10s linear infinite;
+  }
+  
+  footer .wave#wave3 {
+    z-index: 1000;
+    opacity: .2;
+    bottom: 15px;
+    animation: animateWave 6s linear infinite;
+  }
+  
+  footer .wave#wave4 {
+    z-index: 999;
+    opacity: .7;
+    bottom: 20px;
+    animation: animateWave_02 6s linear infinite;
+  }
+  
+  @keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+  
+    100% {
+        background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animateWave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+  
+    100% {
+        background-position-x: 1000px;
+    }
+  }
+
+
+  
+  footer .social_icons li:nth-child(1) a:hover {
+    transform: translateY(-10px);
+    color: #3b5998;
+   
+  }
+  
+  .social_icons li:nth-child(2) a:hover {
+    transform: translateY(-10px);
+    color: #1d9bf0;
+  }
+  
+  .social_icons li:nth-child(3) a:hover {
+    transform: translateY(-10px);
+    color: #ff5b5b;
+  }
+  
+  
+  .social_icons li:nth-child(4) a:hover {
+    transform: translateY(-10px);
+    color: #f5a801;
+  }
