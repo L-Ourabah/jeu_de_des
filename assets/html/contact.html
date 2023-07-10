@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <title>contact</title>
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <img class="logo" src="" alt="logo-2" />
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="./jeu-de-dé.html">Jeu de dé</a></li>
+                <li><a href="./regle.html">Regle du jeu</a></li>
+                <li><a href="./morpion.html">Morpion</a></li>
+                <li><a href="./lependu.html">Le pendu</a></li>
+                <li><a class="active1" href=".#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+
+
+        
+
+       
+        <div class="contacter-bg">
+             <div id="title-contact">
+            <h1> Nous Contacter </h1>
+
+        </div>
+            <div class="contact-box">
+                <h2>Formulaire de contact</h2>
+                <form onsubmit="return validateForm()">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+
+
+                    <label for="prenom">Sujet :</label>
+                    <input type="text" id="sujet" name="sujet" required>
+
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error-message"></span>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+
+
+                    <input type="submit" value="Envoyer mon message">
+                </form>
+            </div>
+            <div id="localisation">
+
+                <div id="adresse">
+                    <h3> Adresse: </h3>
+                    <br>
+                    <p> 120 rue du jeu</p>
+                    <p>93700 Drancy</p>
+                    <br>
+
+                    <div id="telephone">
+                        <h4> Téléphone: </h4>
+                        <br>
+                        <p> 01.93.93.39.39 </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="waves">
+
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+
+        </div>
+
+        <ul class="menu">
+
+
+            <li><a href="#">Contact</a></li>
+            <li><a href="mailto:ourabah.lou@hotmail.fr">Nous contactez</a></li>
+            <li><a href="./regle.html">Régle</a></li>
+            <li><a href="../../index.html">IZEM-GAMING</a></li>
+
+        </ul>
+
+        <ul class="social_icons">
+
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+
+        </ul>
+
+        <p>©2023 Lounnas Ourabah | Izem </p>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/contact.js"></script>
+
+</body>
+
+</html>
