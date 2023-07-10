@@ -1,0 +1,100 @@
+/*                   GÉNÉRAL                       */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --couleur-principale: #c5c5d2;
+    --couleur-secondaire: #6c6a58;
+    --bleu-secondaire: #4a7e9a;
+    --bleu-tertiaire: #3f3d61;
+    --couleur-police: rgb(255, 255, 255);
+}
+body {
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 4%;
+    color: blue;
+}
+.pendu{
+    margin-bottom: 165px;
+}
+.container-mot {
+    margin: 50px 0;
+}
+
+.container-devine {
+    margin-bottom: 20px;
+
+}
+
+#devineInput {
+    width: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+#devineButton {
+    padding: 5px 10px;
+    font-size: 16px;
+    border:none;
+    background-color:blue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.container-resultat {
+    
+    text-align: center;
+    margin-top: 20px;
+}
+
+#resultat {
+    margin: 3%;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(240, 43, 43);
+}
+
+.container-pendu {
+    margin-top: 50px;
+    
+}
+
+#imagePendu {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    /* Styles pour les écrans de petite taille */
+    .container-pendu {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+    #devineInput {
+        width: 40px;
+    }
+
+    #devineButton {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+}
