@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Régle du jeu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="stylesheet" href="../css/regle.css">
+
+</head>
+
+<body id="regle">
+    <header>
+
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <img class="logo" src="" alt="logo-2" />
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="./jeu-de-dé.html">Jeu de dé</a></li>
+                <li><a class="active1" href="#">Regle du jeu</a></li>
+                <li><a href="./morpion.html">Morpion</a></li>
+                <li><a href="./lependu.html">Le pendu</a></li>
+                <li><a href=".//contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="r-jeu">
+            <h1>Regle des jeux</h1>
+
+            <div class="regle">
+
+                <h2>Jeu de dé</h2>
+
+                <p>
+                    Le jeu comprend 2 joueurs sur un seul et même écran. Chaque joueur possède un score
+                    temporaire (ROUND) et un score global (GLOBAL).
+                </p>
+
+
+
+                <p>
+                    À chaque tour, le joueur a son ROUND initialisé à 0 et peut
+                    lancer un dé autant de fois qu'il le souhaite.
+                </p>
+
+
+
+                <p>
+                    Le résultat d’un lancer est ajouté au ROUND.
+                </p>
+
+                <p>
+                    Lors de son tour, le
+                    joueur peut décider à tout moment de: Cliquer sur l’option “Hold”, qui permet d’envoyer les points
+                    du
+                    ROUND
+                    vers le GLOBAL. Ce sera alors le tour de
+                    l’autre joueur.
+                </p>
+
+
+                <p>
+                    Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour.
+                </p>
+
+
+                <p>
+                    Le premier joueur qui atteint les 100 points sur global gagne le jeu.
+                </p>
+                <a href="../html/jeu-de-dé.html"><img src="../image/dice1.png" alt="jeu de dé"></a>
+            </div>
+
+
+            <div class="regle">
+
+                <h2>Jeu du morpion</h2>
+
+                <p>
+                    Le jeu se joue à deux joueurs, chacun utilisant un symbole différent (par exemple, "X" et "O").
+                    La grille de jeu est initialement vide.Les joueurs jouent à tour de rôle en plaçant leur symbole
+                    sur une case vide de la grille.
+                </p>
+
+
+
+                <p>
+                    Le premier joueur commence en plaçant son symbole sur n'importe quelle case de la grille.
+                </p>
+
+
+
+                <p>
+                    Les joueurs alternent ensuite leurs tours en plaçant leur symbole sur une case vide non encore
+                    jouée.
+                </p>
+
+
+                <p>Le jeu se poursuit jusqu'à ce qu'un joueur aligne trois de ses symboles horizontalement,
+                    verticalement ou en diagonale, ou que toutes les cases de la grille soient remplies sans
+                    qu'aucun joueur n'ait réussi à aligner trois symboles.
+                </p>
+
+
+                <p>
+                    Si l'un des joueurs parvient à aligner trois de ses symboles, il remporte la partie.
+                </p>
+
+                <p>
+                    Si toutes les cases de la grille sont remplies sans alignement de trois symboles, la partie est
+                    déclarée nulle ou se termine par un match nul.
+                    Après la fin de la partie, les joueurs peuvent décider de rejouer une nouvelle partie.Le premier
+                    joueur qui atteint les 100 points sur global gagne le jeu.
+                </p>
+                <a href="../html/morpion.html"><img src="../image/morpionLien.png"  width="20px" height="20px" alt="morpion"></a>
+            </div>
+
+            <div class="regle">
+
+                <h2>Jeu du morpion</h2>
+
+                <p>
+                    Un mot secret aleatoire est choisie et un nombre de tirets représentant le nombre de lettres
+                    dans le mot sur une feuille de papier (par exemple, "_ _ _ _ _" pour un mot de cinq lettres).
+
+                </p>
+
+
+
+                <p>
+                    Le joueur commence à deviner des lettres qui pourraient figurer dans le mot.
+                </p>
+
+
+
+                <p>
+                    Si la lettre proposée est présente dans le mot, elle est placée à toutes les
+                    positions appropriées dans le mot secret. Par exemple, si le mot secret est "PENDU" et que le joueur
+                    propose la lettre "E", le mot secret deviendrait "_ E _ _ _".
+
+                </p>
+
+
+                <p>Si la lettre proposée n'est pas présente dans le mot, on ajoute une partie
+                    du dessin d'un bonhomme pendu (généralement une potence et une corde).
+                    Le joueur continue à deviner des lettres jusqu'à ce qu'il devine correctement le mot ou jusqu'à ce
+                    que le dessin du bonhomme pendu soit complet.
+
+                </p>
+
+
+                <p>
+                    Si le joueur devine correctement le mot avant que le dessin du bonhomme pendu ne soit complet, il
+                    remporte la partie. Sinon, il a perdu.
+
+                </p>
+
+                <p>
+                    Après la fin de la partie, les joueurs peuvent décider de jouer à nouveau en choisissant de nouveaux
+                    mots aléatoire.
+                </p>
+                <a href="../html/lependu.html"><img src="../image/penduLien.jpg" width="20px" height="20px" alt="pendu"></a>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+
+        <div class="waves">
+
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+
+        </div>
+
+        <ul class="menu">
+
+
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="mailto:ourabah.lou@hotmail.fr">Nous contactez</a></li>
+            <li><a href="#">Régle</a></li>
+            <li><a href="../../index.html">IZEM-GAMING</a></li>
+
+        </ul>
+
+        <ul class="social_icons">
+
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+
+        </ul>
+
+        <p>©2023 Lounnas Ourabah | Jeu de dé </p>
+
+    </footer>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
