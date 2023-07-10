@@ -9,8 +9,8 @@ nav {
    
    .logo {
      height: 50px;
-   
-     margin: auto 0 auto 3.7rem;
+    margin-top: 50px;
+     margin: auto 0 auto 50px;
    }
    
    nav ul {
