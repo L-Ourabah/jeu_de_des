@@ -82,7 +82,7 @@ document.getElementById('btn-hold').addEventListener('click', function() {
     document.getElementById('hold-sound').play();
 
     // Vérifier si le joueur a gagné
-    if (scores[activePlayer] >= 6) {
+    if (scores[activePlayer] >= 100) {
       document.getElementById('name-' + activePlayer).textContent = 'Vous avez gagné !';
       document.getElementById('player-' + activePlayer + '-interface').classList.remove('active');
       document.getElementById('player-' + activePlayer + '-interface').classList.add('winner');
