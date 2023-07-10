@@ -1,0 +1,259 @@
+/*                   GÉNÉRAL                       */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Poppins', sans-serif, ;
+}
+
+:root{
+    --couleur-principale: #c5c5d2;
+    --couleur-secondaire: #6c6a58;
+    --bleu-secondaire: #4a7e9a;
+    --bleu-tertiaire: #3f3d61;
+    --couleur-police: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+.container {
+    text-align: center;
+    
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    background-image: url(/assets/image/las-vegas-959085_1280.jpg);
+    background-size: cover;
+    background-position: center;
+
+    /*  this is where the magic happens:  */
+    background-attachment: fixed;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    
+}
+.container h2{
+    color:rgb(2, 0, 0) ;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: aliceblue;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+.card p {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+    line-height: 1.5;
+    padding: 2em;
+}
+
+
+.second {
+    background-image: url(./assets/image/las-vegas-1846684_1280.jpg);
+    background-attachment: fixed;
+    height: 1200px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 1em;
+}
+
+.card {
+    height: 300px;
+}
+
+.div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    justify-content: space-around;
+    
+}
+
+.item {
+    display: flex;
+    max-width: 320px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5em;
+    box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    width: 35%;
+    padding-bottom: 25px;
+    height: 750px;
+
+}
+
+.img {
+    width: 90%;
+    height: 350px;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: .3em;
+    ;
+}
+
+.img-first {
+    background-image: url(./assets/image/Dice\ Formation\ White\ 2\ B\ by\ John\ Brueske\ _\ Reference\ photos\ for\ artists\,\ Object\ photography\,\ Life\ drawing\ reference.jpg);
+}
+
+.img-second {
+    background-image: url(./assets/image/tic-tac-toe-355090_1280.jpg);
+}
+
+.img-third {
+    background-image: url(./assets/image/Tarot\ de\ Marseille\ Edition\ Millennium\,\ Marseille\ 2017.png);
+
+
+}
+
+.second {
+    flex-direction: row;
+    gap: 1.6em;
+    flex-wrap: wrap;
+}
+
+
+
+@media (max-width:1200px) {
+    .item {
+        height: 300px;
+
+        width: 500px;
+    }
+
+    .card p {
+        display: none;
+    }
+
+    .card {
+        height: 100px;
+
+    }
+
+    .div {
+        flex-direction: column;
+
+    }
+
+}
+
+
+
+
+.fumé{
+    
+   position: relative;
+   
+   background-color: black;
+   
+  
+  
+}
+
+video{
+    width: 100%;
+    height: 40vh;
+ 
+  
+}
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fffbfb;
+    font-size: 2.6em;
+    font-family: sans-serif;
+    letter-spacing: 02.rem;
+
+}
+h1 span{
+    opacity:0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+    
+}
+@keyframes animate {
+ 0%{
+    opacity: 0;
+    transform: rotateY('90deg');
+    filter: blur(10px);
+
+ }   
+ 100%{
+    opacity: 1;
+    transform: rotateY('0deg');
+    filter: blur(0px);
+
+ }
+}
+
+
+h1 span:nth-child(1){
+    animation-delay: 1s;
+}
+h1 span:nth-child(2){
+    animation-delay: 2s;
+}
+h1 span:nth-child(3){
+    animation-delay: 2.5s;
+}
+h1 span:nth-child(4){
+    animation-delay: 3s;
+}
+h1 span:nth-child(5){
+    animation-delay: 3.25s;
+}
+h1 span:nth-child(6){
+    animation-delay: 3.5s;
+}
+h1 span:nth-child(7){
+    animation-delay: 3.75s;
+}
+h1 span:nth-child(8){
+    animation-delay: 4s;
+}
+h1 span:nth-child(9){
+    animation-delay: 4.25s;
+}
+h1 span:nth-child(10){
+    animation-delay: 4.5s;
+}
+h1 span:nth-child(11){
+    animation-delay: 5s;
+}
