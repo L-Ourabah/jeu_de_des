@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>jeu de dé</title>
+  
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/jeu-de-dé.css" />
+    <link rel="stylesheet" href="../css/nav-footer.css">
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <img class="logo" src="" alt="logo-2" />
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a class="active1" href="#">Jeu de dé</a></li>
+                <li><a href="./regle.html">Regle du jeu</a></li>
+                <li><a href="./morpion.html">Morpion</a></li>
+                <li><a href="./lependu.html">Le pendu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Le jeu de dé</h1>
+
+        <div class="container">
+
+            <div class="game">
+
+                <div class="player-interface" id="player-0-interface">
+
+                    <h2 class="player-name" id="name-0">Joueur 1</h2>
+                    <p class="player-score" id="score-0">0</p>
+                    <p class="score-cour">Round : <span id="current-0">0</span></p>
+
+                </div>
+
+                <div class="option">
+
+                    <div class="btn">
+
+                        <button id="btn-new">Nouvelle partie</button>
+                        <button id="btn-roll">Lancer le dé</button>
+                        <button id="btn-hold">Hold</button>
+
+                    </div>
+                    <div><a class="regle_access" href="../html/regle.html">Regle</a></div>
+
+                    <div class="instance">
+                        <div class="dice" id="dice"></div>
+                    </div>
+
+                </div>
+
+                <div class="player-interface" id="player-1-interface">
+
+                    <h2 class="player-name" id="name-1">Joueur 2</h2>
+                    <p class="player-score" id="score-1">0</p>
+                    <p class="score-cour">Round: <span id="current-1">0</span></p>
+
+                </div>
+            </div>
+        </div>
+
+        <audio id="dice-sound" src="../son/lancer.mp3"></audio>
+        <audio id="hold-sound" src="../son/hold.mp3"></audio>
+        <audio id="new-game-sound" src="../son/newGame.mp3"></audio>
+        <audio id="winner-sound" src="../son/winner.mp3"></audio>
+
+    </main>
+
+
+    <footer>
+
+        <div class="waves">
+
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+
+        </div>
+
+        <ul class="menu">
+
+
+            <li><a href="#">Contact</a></li>
+            <li><a href="mailto:ourabah.lou@hotmail.fr">Nous contactez</a></li>
+            <li><a href="./regle.html">Régle</a></li>
+            <li><a href="../../index.html">IZEM-GAMING</a></li>
+
+        </ul>
+
+        <ul class="social_icons">
+
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+
+        </ul>
+
+        <p>©2023 Lounnas Ourabah | IZEM </p>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/jeu-de-dé.js"></script>
+
+</body>
+
+</html>
