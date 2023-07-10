@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu du Pendu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/pendu.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <img class="logo" src="" alt="logo-2" />
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="./jeu-de-dé.html">Jeu de dé</a></li>
+                <li><a href="./regle.html">Regle du jeu</a></li>
+                <li><a href="./morpion.html">Morpion</a></li>
+                <li><a class="active1" href="#">Le pendu</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Jeu du Pendu</h1>
+        <div class="pendu">
+            <div class="container-mot">
+                <p id="mot"></p>
+            </div>
+            <div class="container-devine">
+                <label for="devineInput">Devinez une lettre :</label>
+                <input type="text" id="devineInput" maxlength="1">
+                <button id="devineButton">Deviner</button>
+
+            </div>
+
+            <div class="container-pendu">
+                <img id="imagePendu" src="../image/Hangman-0.png" alt="Pendu">
+
+            </div>
+            <div class="container-resultat">
+                <p id="resultat"></p>
+                <button id="rejouerButton">Rejouer</button>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+
+        <div class="waves">
+
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="">Aide</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="mailto:ourabah.lou@hotmail.fr">Nous contactez</a></li>
+            <li><a href="#">SAV</a></li>
+            <li><a href="#">CGU</a></li>
+
+        </ul>
+
+        <ul class="social_icons">
+
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+
+        </ul>
+
+        <p>©2023 Lounnas Ourabah | Jeu de dé </p>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="../js/pendu.js"></script>
+</body>
+
+</html>
