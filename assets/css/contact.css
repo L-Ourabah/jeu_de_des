@@ -116,7 +116,7 @@ h2 {
 }
 
 .contact-box input[type="submit"]:hover {
-    color: var(--couleur-principale);
+    color: var(--couleur-police);
 }
 
 /* Style pour les messages d'erreur  */
