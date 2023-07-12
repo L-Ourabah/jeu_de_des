@@ -2,7 +2,7 @@
 
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,199 +14,134 @@
     font-family: 'Poppins', sans-serif, ;
 }
 
-:root{
-    --couleur-principale: #1c86b4;
-    --couleur-secondaire: #0b0a01;
-    --bleu-secondaire: #2cbfa2;
-    --bleu-tertiaire: #1b11d5;
+:root {
+    --couleur-principale: #00b3ff;
+    --couleur-secondaire: #1c1a02;
+    --bleu-secondaire: #1c47d4;
+    --bleu-tertiaire: #3884fc;
     --couleur-police: rgb(255, 255, 255);
 }
 
-html{
+html {
     height: 100%;
     width: 100%;
 }
-
-h1, h3, h4, h5, h6{
+body{
+    background-color:var(--bleu-tertiaire);
+}
+h1
+{
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
     color: rgb(2, 0, 0);
     border-radius: 5px;
     padding: 1%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 5px solid #6b6bb4;
+
+    border: 2px solid var(--couleur-police);
+    margin-top: 10%;
+    font-weight: bold;
+    background-image: url(../image/Tumblr.gif);
+   
+    background-size: cover;
+
+    background-repeat: no-repeat;
 
 }
-.contacter-bg{
+
+.contacter-bg {
     background-image: url(../image/Tumblr.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-h2{
-    font-size: 30px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    
+
 }
 
-
-header{
-    
-    background: var(--couleur-principale);
-    height: 100%;
-}
-
-header, section{
+h2 {
+    font-size: 1.2em;
     color: var(--couleur-police);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 4%;
+
 }
 
-#logo-container{
-    width: 100px;
-}
-
-#logo-container img{
-    width: 100%;
-}
-
-#header-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-}
-.header-contact{
- width: 100%;
-    height: 40vh;
-}
-
-#title-contact{
+#title-contact {
     padding: 30px;
     text-align: center;
-    font-size: 45px; 
+    font-size: 2em;
 
 }
-h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
 
-    /* Styles pour la boîte du formulaire */
-    .contact-box {
-      width: 400px;
-      margin: 0 auto;
-      background-color:#020037;
-      padding: 40px;
-      border-radius: 5px;
-      text-align: center;
-      color: var(--couleur-police);
-      margin-bottom: 50px;
-      font-size: 20px;
-    }
-    
-    /* Styles pour les champs de saisie */
-    .contact-box input[type="text"],
-    .contact-box input[type="email"],
-    .contact-box textarea {
-      width: 100%;
-      padding: 13px;
-      margin-bottom: 15px;
-      border: 3px solid #ffef00;
-      border-radius: 20px;
-      text-align: center;
-      font: size 20px; 
-      color: black;
-    }
-    
-    /* Style pour le bouton d'envoi */
-    .contact-box input[type="submit"] {
-      
-      background-color: #1baef2;
-      border: none;
-      padding: 20px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 20px;
-      margin-top: 20px;
-      border-radius: 15px;
-      box-shadow: 0px 5px 5px grey;
-      color: black;
-      
-    }
-    
-    .contact-box input[type="submit"]:hover {
-        color: var(--couleur-principale);
-    }
-    
-    /* Style pour les messages d'erreur  */
-    .contact-box .error-message {
-      color: red;
-      margin-top: 5px;
-    }
-   
 
-#adresse{
-    margin: 3em 0;
-    color: var(--couleur-police);
+/* Styles pour la boîte du formulaire */
+.contact-box {
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
     text-align: center;
-    font-size: 25px;
+    color: var(--couleur-police);
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
-#localisation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-    
+/* Styles pour les champs de saisie */
+.contact-box input[type="text"],
+.contact-box input[type="email"],
+.contact-box textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 3px solid var(--bleu-secondaire);
+    border-radius: 20px;
+    text-align: center;
+    font: size 20px;
+    color: black;
 }
+
+/* Style pour le bouton d'envoi */
+.contact-box input[type="submit"] {
+
+    background-color: #1baef2;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px grey;
+    color: black;
+    margin-bottom: 100px;
+
+}
+
+.contact-box input[type="submit"]:hover {
+    color: var(--couleur-principale);
+}
+
+/* Style pour les messages d'erreur  */
+.contact-box .error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+
+
+
+
 
 
 @media (min-width: 720px) {
     .contact-box {
-     width: 55%;
+        width: 40%;
     }
-    #header-contact img{
-        height: 150px;
-    } 
+ h1{
+    width: 40%;
+    margin: 30px auto;
+ }
 }
 
 
-@media (min-width: 1100px){
-
-    #accueil section p{
-        text-align: center;
-        margin-bottom: 2em;
-    }
-
-    .hidden{
-        display: block;
-    }
-
-    #section-services{
-        width: 100%;
-    }
-
-    #main-flex{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0;
-    }
-
-    #main-flex section, #main-flex div{
-        width: 50%;
-        height: 300px;
-        padding: 0;
-    }
-
-    #main-flex img{
-        width: 100%;
-        height: 100%;
-    }
-
- 
 
 
-}
+
