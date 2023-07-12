@@ -1,6 +1,12 @@
-
+:root {
+  --couleur-principale: #00b3ff;
+  --couleur-secondaire: #1c1a02;
+  --bleu-secondaire: #1c47d4;
+  --bleu-tertiaire: #3884fc;
+  --couleur-police: rgb(255, 255, 255);
+}
 nav {
-  background: rgb(189, 195, 160);
+  background: var(--bleu-tertiaire);
      height: 80px;
      width: 100%;
      display: flex;
@@ -8,9 +14,10 @@ nav {
    }
    
    .logo {
-     height: 50px;
-    margin-top: 50px;
-     margin: auto 0 auto 50px;
+    
+   height: 60px ;
+   width: 60px;
+     margin: 9px 22px;
    }
    
    nav ul {
@@ -25,22 +32,24 @@ nav {
    }
    
    nav ul li a {
-     color:black;
+     color:var(--couleur-secondaire);
      font-size: 17px;
      padding: 7px 13px;
      border-radius: 4px;
      text-transform: uppercase;
+     font-family: 'poppins';
+     font-weight: 400;
    }
    
    nav ul li a.active1,
    nav ul li a:hover {
-     background-color: rgb(213, 208, 140);
+     background-color: var(--couleur-principale);
    }
    
    .checkbtn {
      
      font-size: 30px;
-     color: rgb(255, 0, 0);
+     color: var(--couleur-police);
      float: right;
      line-height: 80px;
      margin-right: 40px;
@@ -54,10 +63,7 @@ nav {
    }
    
    @media (max-width: 952px) {
-     .logo {
-       height: 40px;
-       margin: auto 0 auto 1.5rem;
-     }
+     
    
      nav ul li a {
        font-size: 15px;
@@ -80,13 +86,12 @@ nav {
        position: fixed;
        width: 100%;
        height: auto;
-       background: rgb(174, 181, 140);
-       top: 80px;
+       background: var(--bleu-tertiaire);
+       top: 78px;
        left: 0;
        text-align: center;
        transition: all 0.5s ease;
        border-radius: 0px 0px 30px 30px;
-       /* clip-path: circle(0% at 92% 0); */
        clip-path: inset(0 0 100% 0);
        visibility: hidden;
        z-index: 1000;
@@ -102,12 +107,12 @@ nav {
      nav ul li a:hover,
      nav ul li a.active1 {
        background: none;
-       color: rgb(246, 7, 7);
+       color: var(--couleur-police);
        z-index: 4;
      }
      #check:checked ~ ul {
        clip-path: inset(0 0 0% 0);
-       /* clip-path: circle(130% at 50% 0); */
+       
        visibility: visible;
      }
    }
@@ -124,7 +129,7 @@ nav {
     position: relative;
     width: 100%;
    
-    background: #3884fc;
+    background: var(--bleu-tertiaire);
     min-height: 100px;
     display: flex;
     justify-content: center;
@@ -247,7 +252,7 @@ nav {
   
   .social_icons li:nth-child(2) a:hover {
     transform: translateY(-10px);
-    color: #1d9bf0;
+    color: #c2ddeb;
   }
   
   .social_icons li:nth-child(3) a:hover {
@@ -258,5 +263,5 @@ nav {
   
   .social_icons li:nth-child(4) a:hover {
     transform: translateY(-10px);
-    color: #f5a801;
+    color: #140e01;
   }
