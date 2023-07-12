@@ -39,9 +39,11 @@ body {
 
 h1 {
 
-    margin: 9%;
+    margin: 4%;
     color: var(--couleur-police);
-    font-size: 2em;
+    font-size: 4em;
+    font-family: 'roboto';
+    font-weight: bold;
 }
 
 .pendu {
