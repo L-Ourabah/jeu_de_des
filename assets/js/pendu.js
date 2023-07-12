@@ -16,11 +16,15 @@ var boutonRejouer = document.getElementById("rejouerButton");
 var imagePendu = document.getElementById("imagePendu");
 
 // Affiche le mot initial avec des tirets pour les lettres non devinées
-var motInitial = "";
+var motInitial = ""; // Déclare une variable "motInitial" et l'initialise avec une chaîne de caractères vide.
 for (var i = 0; i < motSelectionne.length; i++) {
-    motInitial += "-";
+    // Déclare une boucle "for" qui commence à 0 et se répète tant que "i" est inférieur à la longueur de la variable "motSelectionne".
+    // À chaque itération, le code entre les accolades sera exécuté.
+    motInitial += "-"; // Ajoute un tiret "-" à la variable "motInitial" à chaque itération de la boucle.
 }
 elementMot.textContent = motInitial;
+// Modifie le contenu textuel de l'élément avec l'ID "elementMot" pour qu'il affiche la valeur de la variable "motInitial".
+
 
 // Nombre de tentatives et étape du pendu
 var maxTentatives = 6;
@@ -29,30 +33,58 @@ var tentativeActuelle = 0;
 // Fonction pour vérifier si la lettre devinée est correcte
 function verifierDevine() {
     var devine = inputDevine.value.toLowerCase();
+    // Déclare une variable "devine" et lui assigne la valeur de la propriété "value" de l'élément HTML avec l'ID "inputDevine".
+    // La valeur est convertie en minuscules en utilisant la méthode toLowerCase().
 
     // Vérifie si la lettre a déjà été devinée
     if (lettresDevinees.includes(devine)) {
-        elementResultat.textContent = "Cette lettre a déjà été donée.";
+        // Vérifie si le tableau "lettresDevinees" contient déjà la lettre devinée.
+        // La méthode includes() est utilisée pour vérifier si un élément est présent dans un tableau.
+        elementResultat.textContent = "Cette lettre a déjà été donnée.";
         return;
+        // La fonction est interrompue et ne poursuit pas son exécution.
     }
 
     lettresDevinees.push(devine);
+    // Si la lettre n'a pas déjà été devinée, la lettre devinée est ajoutée à la fin du tableau "lettresDevinees" en utilisant la méthode push().
+    // Le tableau "lettresDevinees" est utilisé pour stocker les lettres déjà devinées.
 
-    // Vérifie si la lettre devinée est présente dans le mot
-    var motMisAJour = "";
-    var devineCorrect = false;
-    for (var i = 0; i < motSelectionne.length; i++) {
-        if (lettresDevinees.includes(motSelectionne[i])) {
-            motMisAJour += motSelectionne[i];
-        } else {
-            motMisAJour += "-";
-        }
+   
 
-        // Vérifie si la lettre devinée est correcte
-        if (motSelectionne[i] === devine) {
-            devineCorrect = true;
-        }
+
+
+   // Vérifie si la lettre devinée est présente dans le mot
+var motMisAJour = "";
+// Déclare une variable "motMisAJour" et l'initialise avec une chaîne de caractères vide.
+// Cette variable sera utilisée pour stocker la version mise à jour du mot en remplaçant les tirets par les lettres correctement devinées.
+
+var devineCorrect = false;
+// Déclare une variable "devineCorrect" et l'initialise à false.
+// Cette variable sera utilisée pour indiquer si la lettre devinée est correcte ou non.
+
+for (var i = 0; i < motSelectionne.length; i++) {
+    // Déclare une boucle "for" qui commence à 0 et se répète tant que "i" est inférieur à la longueur de la variable "motSelectionne".
+    // À chaque itération, le code entre les accolades sera exécuté.
+
+    if (lettresDevinees.includes(motSelectionne[i])) {
+        // Vérifie si la lettre actuelle de "motSelectionne" est présente dans le tableau "lettresDevinees".
+        // Si c'est le cas, cela signifie que la lettre a été devinée correctement et doit être affichée dans le mot mis à jour.
+        motMisAJour += motSelectionne[i];
+        // Ajoute la lettre actuelle à la variable "motMisAJour".
+    } else {
+        // Si la lettre actuelle n'est pas présente dans "lettresDevinees", cela signifie qu'elle n'a pas été devinée correctement.
+        // Dans ce cas, on ajoute un tiret "-" à la variable "motMisAJour" pour représenter une lettre non devinée.
+        motMisAJour += "-";
     }
+
+    // Vérifie si la lettre devinée est correcte
+    if (motSelectionne[i] === devine) {
+        // Compare la lettre actuelle de "motSelectionne" avec la lettre devinée, en utilisant l'opérateur de comparaison strict (===).
+        // Si elles sont identiques, cela signifie que la lettre devinée est correcte.
+        devineCorrect = true;
+        // Met à jour la variable "devineCorrect" à true pour indiquer que la lettre devinée est correcte.
+    }
+}
 
     elementMot.textContent = motMisAJour;
 
